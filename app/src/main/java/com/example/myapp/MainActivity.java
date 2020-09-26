@@ -27,9 +27,7 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
     String fname, fdate, fphone, fdesc, femail, sfdate;
     CalendarView calendar;
-    SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
     TextInputEditText name;
-    TextView saveDate;
     EditText phone;
     EditText emailField;
     EditText desc;
@@ -50,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         emailField = (EditText) findViewById(R.id.emailField);
         desc = (EditText) findViewById(R.id.descField);
         next = (TextView) findViewById(R.id.nextActivity);
-        saveDate = (TextView) findViewById(R.id.saveDate);
 
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -89,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                     isComplete = true;
                 }
 
-                if (isComplete == true) {
+                if (isComplete) {
                     Intent commit = new Intent(MainActivity.this, Activity2.class);
                     commit.putExtra(getResources().getString(R.string.nombre_completo), fname);
                     commit.putExtra(getResources().getString(R.string.correo_electronico), femail);

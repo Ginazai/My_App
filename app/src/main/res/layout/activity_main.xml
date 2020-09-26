@@ -57,23 +57,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/saveDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="110dp"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="13dp"
-            android:text="@string/fecha"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/nextActivity"
-            app:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
@@ -109,6 +92,7 @@
         android:ems="10"
         android:hint="@string/telefono"
         android:inputType="phone"
+        android:maxLength="10"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,6 +112,7 @@
         android:autofillHints="EmailAddress"
         android:ems="10"
         android:hint="@string/correo_electronico"
+        android:maxLength="128"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,6 +127,7 @@
         android:layout_height="43dp"
         android:gravity="center"
         android:hint="@string/nombre_completo"
+        android:maxLength="128"
         app:layout_constraintBottom_toBottomOf="@+id/NextBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
