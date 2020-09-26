@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="my_app">My App</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="telefono">Telefono</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="fecha"></string>
+    <string name="confirmar_datos">Confirmar Datos</string>
+    <string name="editar">Editar</string>
+</resources>
